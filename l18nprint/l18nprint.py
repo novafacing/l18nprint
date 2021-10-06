@@ -35,9 +35,6 @@ class L18NPrinter:
         if not isinstance(obj, str) and not isinstance(obj, bytes):
             return str(obj)
 
-        if len(obj) <= MIN_L18N_LEN:
-            return obj
-
         if isinstance(obj, bytes):
             try:
                 obj = obj.decode("ascii")
@@ -47,7 +44,7 @@ class L18NPrinter:
         return "".join(
             map(
                 lambda e: f"{e[0]}{len(e[1:-1])}{e[-1]}"
-                if e and not e.isspace()
+                if e and not e.isspace() and len(e) > MIN_L18N_LEN
                 else e,
                 split(r"(\S+)", obj),
             )

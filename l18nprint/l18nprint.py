@@ -70,8 +70,7 @@ class L18NPrinter:
             file = self._stream
 
         for obj in objects:
-            for l18n_obj in self.l18n(obj):
-                file.write(l18n_obj)
+            file.write(self.l18n(obj))
             file.write(sep)
 
         file.write(end)

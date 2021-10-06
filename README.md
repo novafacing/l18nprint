@@ -8,9 +8,15 @@ Pull requests and improvements are welcome. And, as always:
 
 # Installation
 
-The simplest way to install this package is with [poetry](https://python-poetry.org/). Just `poetry add git+https://github.com/novafacing/l18nprint`.
+The simplest way to install this package into your project is with [poetry](https://python-poetry.org/). Just `poetry add l18nprint`.
 
-You can also install with plain pip: `python3 -m pip install git+https://github.com/novafacing/l18nprint.git`.
+You can also install with plain pip from pypi:
+
+`python3 -m pip install l18nprint`
+
+Or from git: 
+
+`python3 -m pip install git+https://github.com/novafacing/l18nprint.git`.
 
 If you really want, you can download the source yourself.
 

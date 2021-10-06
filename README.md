@@ -17,7 +17,7 @@ If you really want, you can download the source yourself.
 ```
 $ git clone https://github.com/novafacing/l18nprint.git
 $ cd l18nprint
-$ poetry build && python3 -m
+$ poetry build && python3 -m pip install dist/*.whl
 ```
 
 # Example usage
